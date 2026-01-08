@@ -1,0 +1,14 @@
+{
+  "x8_settings": {
+    "delay": 0,
+    "headers": "",
+    "methods": ["GET", "POST"],
+    "chain_count": 100
+  },
+  "wordlists": {
+    "custom_wordlist_path": "wordlists/custom_params.txt"
+  },
+  "http_settings": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  }
+}
