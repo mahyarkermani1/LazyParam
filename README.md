@@ -10,7 +10,35 @@ The lazyparam script takes one or more urls from you, extracts the parameters an
 - Configurable structure
 
 ## How to install and run
-Coming soon . . .
+### Direct Download
+ - You can download the executable file of the lazyparam from [**this link**](https://github.com/mahyarkermani1/LazyParam/releases/download/v0.1.0/lazyparam)
+
+### Build from source
+  - **Download Go**
+    ```
+    apt install golang-go
+    ```
+  
+  - **Download repository**
+    ```
+    git clone https://github.com/mahyarkermani1/LazyParam.git
+    ```
+  
+  - **cd to the project directory**
+    ```
+    cd LazyParam
+    ```
+  
+  - **Install prerequisites**
+    ```
+    go mod tidy
+    ```
+  
+  - Build and run
+    ```
+    go build
+    ./lazyparam -u https://example.com/home
+    ```
 
 ## Roadmap
 
@@ -32,9 +60,21 @@ Coming soon . . .
 
 </details>
 
+- [x] Version 0.1.0 <details>
+  <summary></summary>
+
+   - [x] Parameter Fuzz on a single url
+   - [x] Run the [fallparams ](https://github.com/ImAyrix/fallparams/)tool on the url to collect page parameters, combine them with a [custom wordlist](https://github.com/mahyarkermani1/LazyParam/blob/main/wordlists/custom_params.txt) of parameters, and perform parameter fuzz with [x8](https://github.com/Sh1Yo/x8)
+
+</details>
+
 
 ## Open source tools used
-Coming soon
+- To extract page parameters
+   - [**fallparams**](https://github.com/ImAyrix/fallparams)
+
+- For parameter fuzzing
+   - [**x8**](https://github.com/Sh1Yo/x8)
 
 ## Image gallery
 Coming soon
